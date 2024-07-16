@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en los enlaces */
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none; /* Ocultar inicialmente el botón */
+}
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+.font-space{
+  font-family: 'Space Grotesk', sans-serif;
+}
+.font-2{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
+html, body {
+    overflow-x: hidden;
+  }
+  
+  /**
+   * Enable smooth scrolling on the whole document
+   */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent; 
+
+
+    scroll-behavior: smooth;
+  }
+
+  html:hover {
+    scrollbar-color: #999 transparent; /* Color del handle al pasar el mouse */
+}
+  
+  /**
+   * Disable smooth scrolling when users have prefers-reduced-motion enabled
+   */
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  
+  /**
+   * Add .section to every anchored element for scroll margin
+   */
+  .section {
+    scroll-margin-top: 2rem;
+  }
+  
+  /* Header */
+  .site-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 48em) {
+    .site-title {
+      float: left;
+    }
+  }
+  
+  @-webkit-keyframes animateWave {
+    0% {
+      transform: scale(1, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes animateWave {
+    0% {
+      transform: scale(1, 0);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+
+  
+  @media (min-width: 48em) {
+    .grid-sizer,
+    .grid-item {
+      width: 25%;
+    }
+    .grid-item {
+      float: left;
+      padding: 6px;
+    }
+  }
+  
+  .grid-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Portfolio */
+  .portolio-section .container {
+    padding: 0;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .portfolio-item figcaption {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    transition: transform 0.35s;
+    transform: translate3d(0, 100%, 0);
+  }
+  
+  .portfolio-item figcaption h4 {
+    color: #222;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+  
+  .portfolio-item figcaption p {
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .portfolio-item:hover figcaption {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  /* Portolio Caption */
+  #bp_container .bp-xc {
+    background: #F6E05E !important;
+  }
+  
+  #bp_caption a {
+    text-decoration: none;
+  }
+  
+  /* Footer section */
+  footer a:not(.nav-link) {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  /* Additional utility styles */
+  .container-narrow {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .text-small {
+    font-size: 0.875rem;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.05em;
+  }
+  
+  .hover-effect {
+    transition: transform .18s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    transform: translateY(-2px);
+  }
+  
+  .marker {
+    position: relative;
+    display: inline;
+    width: auto;
+  }
+  
+  .marker-center {
+    padding-right: 0;
+  }
+  
+  .marker:after {
+    content: "";
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    bottom: -25px;
+    right: -30px;
+    background-repeat: no-repeat;
+  }
+  
+  .marker-center:after {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  @media (max-width: 575.98px) {
+    .marker {
+      padding-right: 0;
+    }
+    .marker:after {
+      bottom: -30px;
+      left: 50%;
+      margin-left: -60px;
+    }
+  }
+  
+  .entry-title a {
+    text-decoration: none;
+  }
+
+/* Estilos generales del footer */
+.footer {
+  background-color: #f8f9fa; /* Color de fondo claro (light) */
+  padding: 80px 0; /* Espaciado interior aumentado */
+  margin-top: 40px; /* Espacio superior aumentado */
+  text-align: center; /* Alineación del texto al centro */
+  font-size: 18px; /* Tamaño de fuente aumentado */
+  line-height: 1.6; /* Ajusta la altura de línea según sea necesario */
+  letter-spacing: 0.5px; /* Ajusta el espaciado entre caracteres si es necesario */
+}
+
+/* Ajustes para el texto dentro del footer */
+.footer p {
+    margin-bottom: 0; /* Elimina el espacio debajo del párrafo */
+}
+
+
+
+.content{
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 25rem;
+}
+
+
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+
+
+.navbar {
+  transition: background-color 0.3s ease, padding 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+
+}
+
+.navbar.bg-primary {
+  color: #555; /* Cambio a color de texto blanco */
+  padding-top: 15px; /* Ajuste de padding superior cuando el navbar está fijo */
+}
+
+.navbar.shadow-nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold; /* Aplica negrita a los enlaces del navbar */
+}
+.navbar {
+  font-family: 'Space Grotesk', sans-serif;
+  /* Otros estilos para tu navbar */
+}
+
+
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+  font-weight: bold;
+  text-transform: uppercase; /* Mayúsculas */
+  color: #002147; /* Color del texto */
+  overflow: hidden; /* Para ocultar el delineado inicialmente */
+}
+
+
+
+.logo-text {
+  font-size: 1.5625rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.logo-text .highlight {
+  color: #6C63FF; /* Color morado */
+}
+
+
+/* Estilos para navegadores WebKit */
+/* Anchura y color de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 14px; /* Aumentar el ancho */
+  background-color: transparent; /* Fondo transparente para que no se vea */
+}
+
+/* Track (fondo de la barra de desplazamiento) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Handle (parte arrastrable de la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color del handle */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 4px solid transparent; /* Borde transparente */
+  background-clip: padding-box; /* Se aplica el color solo al área del handle */
+}
+
+/* Cambios al pasar el mouse sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999; /* Color del handle al pasar el mouse */
+}
+
+    /* Estilos para la modal */
+    .modal {
+      display: none; /* Ocultar modal por defecto */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente oscuro */
+      z-index: 9999; /* Z-index alto para que esté por encima del contenido */
+      overflow: auto;
+      padding: 50px; /* Espaciado interior */
+      box-sizing: border-box; /* Ajuste de modelo de caja */
+  }
+
+  .modal-content {
+      position: relative;
+      background-color: #1a1a1a; /* Color de fondo del contenido modal */
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px; /* Bordes redondeados */
+      max-width: 80%; /* Ancho máximo del contenido modal */
+      box-sizing: border-box; /* Ajuste de modelo de caja */
+  }
+
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff; /* Color del botón de cierre */
+      z-index: 9999; /* Asegura que esté por encima de todo */
+  }
+
+  .video-container {
+      position: relative;
+      padding-top: 56.25%; /* Aspect ratio 16:9 */
+      overflow: hidden;
+      background-color: #000;
+      border-radius: 8px; /* Bordes redondeados para el video */
+  }
+
+  .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0; /* Sin borde alrededor del reproductor */
+  }
