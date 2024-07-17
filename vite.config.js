@@ -17,18 +17,5 @@ export default defineConfig({
             $: "jquery",
             jQuery: "jquery",
         },
-    },
-    build: {
-        // Directorio de salida para los archivos compilados
-        outDir: "public/build",
-        // Generar el archivo manifest.json
-        manifest: true,
-        // Opciones de Rollup para configurar las entradas
-        rollupOptions: {
-            input: {
-                app: "resources/js/app.js", // Entrada principal de JavaScript
-                styles: "resources/css/app.css", // Entrada principal de CSS
-            },
-        },
-    },
+    }
 });
