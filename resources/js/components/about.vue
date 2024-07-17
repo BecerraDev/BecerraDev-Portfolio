@@ -80,7 +80,7 @@ export default {
     -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1)
         forwards;
     animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-    background-image: url("../images/wave-bg.svg");
+    background-image: url("public/images/wave-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
