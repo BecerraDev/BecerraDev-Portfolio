@@ -18,7 +18,6 @@
     @include('partials/navbar')
 
     <!-- Secciones -->
-
     <div id="app">
         <main-component></main-component>
     </div>

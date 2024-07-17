@@ -95,7 +95,6 @@
     color: black;
     background-color: #ffcc00;
     border-radius: 25px;
-    transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
