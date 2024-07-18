@@ -6,7 +6,10 @@ import { scrollToTop } from './scripts/scroll.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init();
+AOS.init({
+    duration: 1000, // Duración de la animación en milisegundos
+    once: true, // Si true, la animación se ejecutará solo una vez
+  });
 
 const app = createApp({});
 app.component('main-component', Main);

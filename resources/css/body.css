@@ -6,18 +6,24 @@ body {
 
 #scrollToTop {
     position: fixed;
+    border: none;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     display: none; /* Ocultar inicialmente el botón */
+    outline: none; /* Elimina el contorno al enfocarse */
+    background-image: url('/public/images/arrow-down.svg'); /* Usa el alias @ si está configurado en tu proyecto */
+    background-color: transparent; /* Opcional: Hace el fondo del botón transparente */
+    transform: rotate(180deg); /* Rota la imagen 180 grados para que apunte hacia arriba */
+
 }
 #scrollToTop:hover {
-    background-color: #0056b3;
+  filter: brightness(1.2); /* Aumenta el brillo al pasar el ratón por encima */
 }
 
 .font-space{
@@ -395,3 +401,8 @@ h2 {
       height: 100%;
       border: 0; /* Sin borde alrededor del reproductor */
   }
+  .color-title-section{
+    color:#007bff
+  }
+
+  

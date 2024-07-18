@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     <title>BecerraDev</title>
 
@@ -25,23 +26,11 @@
     <!--- Boton Scroll -->
 
 
-    <button id="scrollToTop" onclick="scrollToTop()">Subir</button>
+    <button id="scrollToTop" class="icon-scrolltop" onclick="scrollToTop()"></button>
 
     <!--- Footer Layout  include('partials/footer') -->
 
-
-
-
-
-
     @include('partials/footer')
-
-   
-
-
-
-
-
 
 </body>
 

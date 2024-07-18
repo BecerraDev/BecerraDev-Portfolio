@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <div class="text-center mb-5">
-                            <h2 class="marker marker-center">Proyectos</h2>
+                            <h2 class="marker marker-center color-title-section">Proyectos</h2>
                         </div>
                         <p class="content ">
                           En esta sección, presento una colección de proyectos que destacan mi experiencia y habilidades en desarrollo. Cada proyecto incluye un video demostrativo reproducido en la misma pagina y enlace al repositorio en GitHub para explorar más detalles y contribuir.
@@ -24,9 +24,9 @@
             <div class="image-container">
               <img src="/public/images/etpel-1.png" class="img-fluid" alt="web design" />
               <div class="overlay">
-                <button class="btn custom-button btn-primary mb-4" onclick="openModal('oYBC7r5oSzk')">                     
+                <button class="btn custom-button color1  btn-primary mb-4" onclick="openModal('oYBC7r5oSzk')">                     
                   <i class="fas fa-play-circle mr-1"></i> Reproducir</button>
-                    <a href="https://github.com/BecerraDev/ETPEL-Portal" class="btn custom-button btn-primary">
+                    <a href="https://github.com/BecerraDev/ETPEL-Portal" class="btn color2 custom-button btn-primary">
                       <i class="fab fa-github mr-1"></i> Repositorio
                     </a>
               </div>
@@ -53,15 +53,15 @@
             <div class="image-container">
               <img src="/public/images/etpel-1.png" class="img-fluid" alt="web design" />
               <div class="overlay">
-                    <button class="btn custom-button btn-primary mb-4" onclick="openModal('EQY9-f_8iTs')">                     
-                      <i class="fas fa-play-circle mr-1"></i> Reproducir</button>
-                  <a href="#" class="btn custom-button btn-primary">
+                    <button class="btn custom-button color1 btn-primary mb-4" onclick="openModal('EQY9-f_8iTs')">                     
+                      <i class="fas fa-play-circle  reproducir mr-1"></i> Reproducir</button>
+                  <a href="#" class="btn custom-button color2 btn-primary">
                     <i class="fab fa-github mr-1"></i> Repositorio
                   </a>
               </div>
             </div>
             <div class="description">
-              <h4> LABATASKER <div class="text-muted text-small purple"> CIISA </div>
+              <h4> LABATASKER <div class="text-muted text-small"> CIISA </div>
               </h4>
               <p> Plataforma para conectar docentes y estudiantes con publicaciones filtradas, mensajería tipo correo y
                 herramientas de colaboración educativa.</p>
@@ -79,35 +79,6 @@
 
 
           <!-- AGREGAR MAS PROYECTOS -->
-
-
-          <div class="col-12 col-md-4" data-aos="fade-left" data-aos-delay="100">
-            <div class="image-container">
-              <img src="/public/images/etpel-1.png" class="img-fluid" alt="web design" />
-              <div class="overlay">
-                  <a href="#" class="btn custom-button btn-primary mb-4">
-                    <i class="fas fa-play-circle mr-1"></i> Reproducir
-                  </a>
-                  <a href="#" class="btn custom-button btn-primary">
-                    <i class="fab fa-github mr-1"></i> Repositorio
-                  </a>
-              </div>
-            </div>
-            <div class="description">
-              <h4> ETPEL <div class="text-muted text-small purple"> CIISA </div>
-              </h4>
-              <p> Plataforma para conectar docentes y estudiantes con publicaciones filtradas, mensajería tipo correo y
-                herramientas de colaboración educativa.</p>
-              <div class="icons project-icons">
-                <i class="fab fa-node-js mr-2" title="Node.js"></i>
-                <i class="fab fa-bootstrap mr-2" title="Bootstrap"></i>
-                <i class="fas fa-database mr-2" title="Database"></i>
-                <i class="fab fa-css3-alt mr-2" title="CSS"></i>
-                <i class="fab fa-js mr-2" title="JavaScript"></i>
-                <i class="fab fa-express mr-2" title="Express"></i>
-              </div>
-            </div>
-          </div>
 
 
 
@@ -180,17 +151,10 @@
 
 }
 
-.purple {
-  color: #6C63FF;
-  /* Color del texto */
-}
-
 .custom-button {
   color: white;
   /* Color del texto */
-  background-color: #6C63FF;
   /* Cambia el color de fondo al pasar el cursor */
-  border-color: #6C63FF;
   /* Color del borde */
 }
 
@@ -288,6 +252,12 @@ a {
   font-size: 14px;
 }
 
+.color1{
+  background-color: red;
+}
+.color2{
+  background-color: purple;
+}
 
 
 

@@ -1,5 +1,5 @@
 <template>
-    <section class="home-style section-config color" id="home">
+    <section class="home-style top color" id="home">
         <div class="cover">
             <div class="container px-3">
                 <div class="row">
@@ -56,14 +56,15 @@
                             </div>
 
                             <div
-                                class="button-container"
+                                class="btn-custom"
                                 data-aos="fade-up"
                                 data-aos-delay="200"
                             >
                                 <a
-                                    href="tu-cv.pdf"
+                                    href="/downloads/CV_Byron_Becerra.pdf"
                                     class="styled-link font-2"
-                                    download
+                                    
+                                    download="CV_Byron_Becerra.pdf"
                                     >Descargar CV</a
                                 >
                             </div>
@@ -72,20 +73,22 @@
                 </div>
             </div>
         </div>
+        
     </section>
+    
+    <div class="wave-bg"></div>
+
 </template>
 
 <style scoped>
-.section-config {
-    padding-top: 10rem;
+.top {
+    padding-top: 7rem;
 }
 .color {
     background-color: #002147;
     color: white;
 }
-.button-container {
-    margin-top: 10rem; /* Espacio superior para separar del contenido anterior */
-}
+
 
 .styled-link {
     display: inline-block;
@@ -95,8 +98,11 @@
     color: black;
     background-color: #ffcc00;
     border-radius: 25px;
+    transition: background-color 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Asegúrate de que el botón esté por encima de la imagen */
 }
+
 
 .styled-link:hover {
     background-color: #5846e0;
@@ -113,6 +119,12 @@
     font-size: 24px; /* Tamaño del ícono, ajusta según necesites */
     margin-right: 20px; /* Espacio entre los íconos, ajusta según necesites */
     color: #fff; /* Color de los íconos */
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.social-icon:hover {
+  transform: translateY(-10px); /* Mueve el icono hacia arriba cuando se aplica hover */
 }
 
 .cambio-color {
@@ -147,10 +159,40 @@
 .job-title-text {
     font-family: 'Open Sans', sans-serif;
 }
+.btn-custom {
+    margin-top: 7rem; /* Espacio superior para separar del contenido anterior */
+    position: absolute;
+    z-index: 2;
+}
+.wave-bg {
+    display: block;
+    height: 9rem;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+
+    -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1)
+        forwards;
+    animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    background-image: url("/images/wave-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+    z-index: 1;
+}
 </style>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default {
-    name: "Home",
-};
+  name: 'Home',
+  mounted() {
+    AOS.init({
+      // Opciones de configuración de AOS
+    });
+  }
+}
 </script>

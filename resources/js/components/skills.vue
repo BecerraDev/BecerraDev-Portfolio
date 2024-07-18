@@ -5,7 +5,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
                         <div class="text-center mb-5">
-                            <h2 class="marker marker-center">Habilidades</h2>
+                            <h2 class="marker marker-center color-title-section">Habilidades</h2>
                         </div>
                         <p class="content">
                             Aquí están algunas de las tecnologías con las que

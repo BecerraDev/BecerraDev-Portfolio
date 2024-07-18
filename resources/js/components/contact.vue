@@ -3,7 +3,7 @@
         <div class="container-narrow">
             <div class="text-center mb-5">
                 <div class="highlight-container" data-aos="fade-up">
-                    <h2 class="highlight-title">Contacto</h2>
+                    <h2 class="highlight-title color-title-section">Contacto</h2>
                 </div>
             </div>
             <div class="row">
@@ -88,16 +88,36 @@
             </div>
         </div>
     </div>
+    <div class="arrow-down"></div>
+
 </template>
 
 <style scoped>
+
+.arrow-down {
+  position: absolute;
+  right: 20px; /* Ajusta según sea necesario */
+  bottom: 20px; /* Ajusta según sea necesario */
+  width: 30px;
+  height: 30px;
+  background-image: url('path-to-your-arrow-image.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer; /* Añade si deseas un cursor que indique que es interactivo */
+  transition: transform 0.3s ease-in-out; /* Añade una transición suave si deseas animaciones */
+}
+
+.arrow-down:hover {
+  transform: translateY(5px); /* Efecto de desplazamiento hacia abajo al pasar el ratón */
+}
+
+
 .highlight-container {
     text-align: center;
     position: relative;
 }
 
 .highlight-title {
-    color: #002147;
     display: inline-block;
     position: relative;
 }

@@ -20,5 +20,5 @@ export default defineConfig({
     },
     server: {
         https: true, // Habilitar HTTPS en el servidor de desarrollo de Vite
-    },
+  },
 });
